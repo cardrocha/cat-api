@@ -25,7 +25,7 @@ const CatListApi = ({ title, cats }: Props) => {
             variant={`${dark ? 'dark' : 'white'}`}
             onClick={() => setDark(!dark)}
           >
-            {dark ? 'dark' : 'white'}
+            {dark ? 'white' : 'dark'}
           </Button>
         </div>
         <GridContainer>

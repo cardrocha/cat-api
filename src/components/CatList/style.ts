@@ -17,7 +17,7 @@ export const GridContainer = styled.ul`
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 `
-export const Button = styled.button<Props>`
+export const Button = styled.button<Omit<Props, 'title' | 'cats'>>`
   position: absolute;
   top: 10px;
   right: 20px;
@@ -33,7 +33,7 @@ export const Button = styled.button<Props>`
   border-radius: 4px;
 `
 
-export const Title = styled.h1<Props>`
+export const Title = styled.h1<Omit<Props, 'title' | 'cats'>>`
   background-color: ${(props) =>
     props.variant === 'white' ? colors.nav : colors.secondaryNav};
   color: ${(props) =>
